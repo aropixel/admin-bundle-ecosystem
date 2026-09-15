@@ -16,16 +16,20 @@ const ecosystemLinksFr = [
   { text: 'Castor Starter', link: '/fr/ecosystem/castor-starter' },
 ]
 
+const base = '/admin-bundle-ecosystem/'
+
 export default defineConfig({
   title: 'Aropixel Admin',
   description: 'The open-source Symfony admin ecosystem — AdminBundle, PageBundle, BlogBundle, MenuBundle and Castor Starter.',
-  base: '/admin-bundle-ecosystem/',
+  base,
   cleanUrls: true,
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon-light.svg', media: '(prefers-color-scheme: light)', type: 'image/svg+xml' }],
-    ['link', { rel: 'icon', href: '/favicon-dark.svg', media: '(prefers-color-scheme: dark)', type: 'image/svg+xml' }],
+    // head tags aren't base-rewritten by VitePress, unlike themeConfig.logo /
+    // hero images — the base prefix has to be applied by hand here.
+    ['link', { rel: 'icon', href: `${base}favicon-light.svg`, media: '(prefers-color-scheme: light)', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: `${base}favicon-dark.svg`, media: '(prefers-color-scheme: dark)', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', rel: 'stylesheet' }],
