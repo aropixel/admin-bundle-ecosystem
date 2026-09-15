@@ -24,7 +24,8 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: '/favicon-light.svg', media: '(prefers-color-scheme: light)', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '/favicon-dark.svg', media: '(prefers-color-scheme: dark)', type: 'image/svg+xml' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', rel: 'stylesheet' }],
