@@ -19,6 +19,7 @@ const ecosystemLinksFr = [
 export default defineConfig({
   title: 'Aropixel Admin',
   description: 'The open-source Symfony admin ecosystem — AdminBundle, PageBundle, BlogBundle, MenuBundle and Castor Starter.',
+  base: '/admin-bundle-ecosystem/',
   cleanUrls: true,
   lastUpdated: true,
 

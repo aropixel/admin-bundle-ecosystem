@@ -18,8 +18,18 @@ npm run build
 npm run preview
 ```
 
-Static output is generated in `.vitepress/dist` — deployable to GitHub Pages, Netlify, Clever Cloud
-static hosting, etc.
+Static output is generated in `.vitepress/dist`.
+
+## Deploy
+
+Pushes to `main` are built and deployed automatically to GitHub Pages by
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+Live at **https://aropixel.github.io/admin-bundle-ecosystem/**.
+
+> The `base` path in `.vitepress/config.mts` is set to `/admin-bundle-ecosystem/` to match this
+> project's GitHub Pages URL. Update it if the site ever moves to a custom domain (and switch it back
+> to `/`).
 
 ## Content
 
