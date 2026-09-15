@@ -1,8 +1,7 @@
 # Aropixel Admin — site
 
 Bilingual (EN/FR) [VitePress](https://vitepress.dev) landing site for the Aropixel Admin open-source
-ecosystem (`admin-bundle`, `page-bundle`, `blog-bundle`, `menu-bundle`, `castor-starter`), in the
-spirit of [castor.jolicode.com](https://castor.jolicode.com/).
+ecosystem (`admin-bundle`, `page-bundle`, `blog-bundle`, `menu-bundle`, `castor-starter`).
 
 ## Develop
 
