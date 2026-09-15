@@ -43,7 +43,6 @@ export default defineConfig({
         nav: [
           { text: 'Get Started', link: '/get-started' },
           { text: 'Ecosystem', items: ecosystemLinksEn },
-          { text: 'Component catalogue', link: 'https://aropixel.github.io/admin-bundle/' },
         ],
         sidebar: {
           '/ecosystem/': [
@@ -74,7 +73,6 @@ export default defineConfig({
         nav: [
           { text: 'Démarrer', link: '/fr/get-started' },
           { text: 'Écosystème', items: ecosystemLinksFr },
-          { text: 'Catalogue de composants', link: 'https://aropixel.github.io/admin-bundle/' },
         ],
         sidebar: {
           '/fr/ecosystem/': [

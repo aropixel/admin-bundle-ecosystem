@@ -67,9 +67,4 @@ see the [ecosystem overview](/ecosystem/admin-bundle) for links.
 | License | MIT, on every repository |
 | Languages | French, English, German, Spanish, Italian, Czech |
 
-## Explore the design system
-
-Before you install anything, you can browse every component the admin UI ships with — rendered on the
-real bundle CSS, not a mockup.
-
-[**▶ Open the live component catalogue**](https://aropixel.github.io/admin-bundle/)
+→ Curious what it looks like before you install anything? See it [in action on the homepage](/#see-it-in-action).

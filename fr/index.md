@@ -45,28 +45,30 @@ features:
     details: Un task runner Castor qui génère un projet admin complet prêt pour Docker, ou un environnement de contribution, en une commande.
     link: /fr/ecosystem/castor-starter
     linkText: Découvrir Castor Starter
-  - icon: 🎨
-    title: Un vrai design system
-    details: Chaque couleur, chaque rayon, chaque espacement est un token CSS --aro-* au-dessus de Bootstrap 5. À parcourir en direct, sur le vrai CSS du bundle.
-    link: https://aropixel.github.io/admin-bundle/
-    linkText: Ouvrir le catalogue de composants
 ---
 
-<div class="aro-section">
+<div class="aro-section aro-section-wide">
 
-## À voir avant d'installer
+## À voir en action
 
-La valeur cœur de l'écosystème, c'est la **boîte à outils Symfony** : le générateur `make:crud` qui
-construit un CRUD à partir de *votre propre* `FormType`, des layouts de FormType réutilisables, le
-composant `DataTable`, et les widgets image/galerie. L'interface d'admin, c'est la partie que vous
-**n'avez pas** à construire — un design system à base de tokens sur Bootstrap 5, donc vous la
-re-thémez à partir d'une poignée de variables CSS.
-
-[**▶ Ouvrir le catalogue de composants en direct**](https://aropixel.github.io/admin-bundle/)
-
-<a href="https://aropixel.github.io/admin-bundle/">
-  <img src="/catalog-preview.png" alt="Catalogue de composants AropixelAdminBundle — boutons, badges, couleurs et typographie rendus sur le vrai CSS du bundle" class="aro-shadow-img" />
-</a>
+<div class="aro-gif-grid">
+  <figure>
+    <img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle : une liste CRUD générée, avec tri, filtre et pagination" class="aro-shadow-img" />
+    <figcaption>AdminBundle — un CRUD complet, généré à partir de votre FormType</figcaption>
+  </figure>
+  <figure>
+    <img src="/gifs/page-builder.gif" alt="AropixelPageBundle : déplacement d'un bloc dans le page builder visuel" class="aro-shadow-img" />
+    <figcaption>PageBundle — le page builder visuel en glisser-déposer</figcaption>
+  </figure>
+  <figure>
+    <img src="/gifs/blog.gif" alt="AropixelBlogBundle : édition d'un article avec champs SEO et planification" class="aro-shadow-img" />
+    <figcaption>BlogBundle — articles, catégories et planification</figcaption>
+  </figure>
+  <figure>
+    <img src="/gifs/menu.gif" alt="AropixelMenuBundle : réorganisation des liens de navigation en glisser-déposer" class="aro-shadow-img" />
+    <figcaption>MenuBundle — menus de navigation en glisser-déposer</figcaption>
+  </figure>
+</div>
 
 </div>
 

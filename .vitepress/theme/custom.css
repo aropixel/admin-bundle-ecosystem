@@ -79,5 +79,37 @@
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 12px 32px rgba(24, 28, 50, 0.14);
-  margin-top: 20px;
+  margin: 24px 0;
+}
+
+.aro-gif-grid .aro-shadow-img {
+  margin: 0;
+}
+
+.aro-section-wide {
+  max-width: 1180px;
+}
+
+.aro-gif-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.aro-gif-grid figure {
+  margin: 0;
+}
+
+.aro-gif-grid figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--vp-c-text-2);
+  text-align: center;
+}
+
+@media (max-width: 719px) {
+  .aro-gif-grid {
+    grid-template-columns: 1fr;
+  }
 }

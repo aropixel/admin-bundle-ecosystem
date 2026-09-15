@@ -4,8 +4,9 @@
 and a solid foundation to build an admin interface quickly — without getting in the way of your own
 code, and without becoming a black box.
 
-[GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle) ·
-[Live component catalogue](https://aropixel.github.io/admin-bundle/)
+[GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle)
+
+<img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
 
 ## Why it's different
 
@@ -23,12 +24,6 @@ keep full control over validation, data transformers and business logic.
 - **Token-based design system** — every colour, spacing and radius is an `--aro-*` CSS custom
   property on top of Bootstrap 5, so re-theming is a handful of variables, not a CSS override war
 - **Multilingual interface** — French, English, German, Spanish, Italian, Czech
-
-## The catalogue, not a screenshot
-
-The component catalogue at [aropixel.github.io/admin-bundle](https://aropixel.github.io/admin-bundle/)
-is also served in-app at `/admin/_catalog` in the dev environment — so it can never drift from what
-the admin actually looks like.
 
 ## Companion bundles
 

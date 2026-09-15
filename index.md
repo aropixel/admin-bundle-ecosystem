@@ -45,27 +45,30 @@ features:
     details: A Castor task runner that scaffolds a full Docker-ready admin project, or a contribution sandbox, in one command.
     link: /ecosystem/castor-starter
     linkText: Discover Castor Starter
-  - icon: 🎨
-    title: A real design system
-    details: Every colour, radius and spacing is an --aro-* CSS token on top of Bootstrap 5. Browse it live, rendered on the real bundle CSS.
-    link: https://aropixel.github.io/admin-bundle/
-    linkText: Open the component catalogue
 ---
 
-<div class="aro-section">
+<div class="aro-section aro-section-wide">
 
-## See it before you install it
+## See it in action
 
-The core value of the ecosystem is the **Symfony toolbox**: the `make:crud` generator that builds a CRUD
-from *your own* `FormType`, reusable form-type layouts, the `DataTable` component, and image/gallery widgets.
-The admin UI is the part you *don't* have to build — a token-based design system on Bootstrap 5, so you
-re-theme it from a handful of custom properties.
-
-[**▶ Open the live component catalogue**](https://aropixel.github.io/admin-bundle/)
-
-<a href="https://aropixel.github.io/admin-bundle/">
-  <img src="/catalog-preview.png" alt="AropixelAdminBundle component catalogue — buttons, badges, colours and typography rendered on the real bundle CSS" class="aro-shadow-img" />
-</a>
+<div class="aro-gif-grid">
+  <figure>
+    <img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
+    <figcaption>AdminBundle — a full CRUD, generated from your own FormType</figcaption>
+  </figure>
+  <figure>
+    <img src="/gifs/page-builder.gif" alt="AropixelPageBundle: dragging a block into place in the visual page builder" class="aro-shadow-img" />
+    <figcaption>PageBundle — the visual, drag-and-drop page builder</figcaption>
+  </figure>
+  <figure>
+    <img src="/gifs/blog.gif" alt="AropixelBlogBundle: editing a blog post with SEO and scheduling fields" class="aro-shadow-img" />
+    <figcaption>BlogBundle — posts, categories and scheduling</figcaption>
+  </figure>
+  <figure>
+    <img src="/gifs/menu.gif" alt="AropixelMenuBundle: reordering navigation links by drag-and-drop" class="aro-shadow-img" />
+    <figcaption>MenuBundle — drag-and-drop navigation menus</figcaption>
+  </figure>
+</div>
 
 </div>
 

@@ -68,9 +68,5 @@ routing — voir l'[aperçu de l'écosystème](/fr/ecosystem/admin-bundle) pour 
 | Licence | MIT, sur chaque dépôt |
 | Langues | Français, anglais, allemand, espagnol, italien, tchèque |
 
-## Explorer le design system
-
-Avant d'installer quoi que ce soit, vous pouvez parcourir tous les composants de l'interface d'admin —
-rendus sur le vrai CSS du bundle, pas une maquette.
-
-[**▶ Ouvrir le catalogue de composants en direct**](https://aropixel.github.io/admin-bundle/)
+→ Envie de voir à quoi ça ressemble avant d'installer quoi que ce soit ? Direction la
+[page d'accueil](/fr/#a-voir-en-action).

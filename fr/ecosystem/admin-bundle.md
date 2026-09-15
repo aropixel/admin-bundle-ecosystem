@@ -4,8 +4,9 @@
 base solide pour construire une interface d'admin rapidement — sans gêner votre propre code, et sans
 devenir une boîte noire.
 
-[GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle) ·
-[Catalogue de composants en direct](https://aropixel.github.io/admin-bundle/)
+[GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle)
+
+<img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle : une liste CRUD générée, avec tri, filtre et pagination" class="aro-shadow-img" />
 
 ## Ce qui le différencie
 
@@ -26,12 +27,6 @@ transformers et la logique métier.
   `--aro-*` au-dessus de Bootstrap 5, donc re-thémer se résume à une poignée de variables, pas une
   guerre de surcharges CSS
 - **Interface multilingue** — français, anglais, allemand, espagnol, italien, tchèque
-
-## Le catalogue, pas une capture d'écran
-
-Le catalogue de composants sur [aropixel.github.io/admin-bundle](https://aropixel.github.io/admin-bundle/)
-est aussi servi dans l'application, sur `/admin/_catalog` en environnement de dev — il ne peut donc
-jamais diverger de ce à quoi l'admin ressemble réellement.
 
 ## Bundles complémentaires
 

@@ -5,6 +5,8 @@
 
 [GitHub — aropixel/page-bundle](https://github.com/aropixel/page-bundle)
 
+<img src="/gifs/page-builder.gif" alt="AropixelPageBundle : déplacement d'un bloc dans le page builder visuel" class="aro-shadow-img" />
+
 ## Trois types de pages, un seul bundle
 
 | Type | Stockage | Cas d'usage |
