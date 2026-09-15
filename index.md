@@ -6,7 +6,7 @@ hero:
   text: "The open-source Symfony admin ecosystem"
   tagline: A developer-friendly back-office toolbox — CRUD generator, pages, blog and menus — built on your own FormTypes, not a black box.
   image:
-    src: /logo-aro.png
+    src: /aropixel-mark.svg
     alt: Aropixel
   actions:
     - theme: brand

@@ -23,7 +23,7 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/logo-aro.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap', rel: 'stylesheet' }],
@@ -93,7 +93,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo-aro.png',
+    logo: '/aropixel-mark.svg',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aropixel' },
     ],

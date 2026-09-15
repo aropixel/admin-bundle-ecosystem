@@ -6,7 +6,7 @@ hero:
   text: "L'écosystème open source pour l'admin Symfony"
   tagline: Une boîte à outils de back-office pensée pour les développeurs — générateur de CRUD, pages, blog et menus — construite sur vos propres FormTypes, pas une boîte noire.
   image:
-    src: /logo-aro.png
+    src: /aropixel-mark.svg
     alt: Aropixel
   actions:
     - theme: brand
