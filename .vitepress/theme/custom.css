@@ -1,0 +1,78 @@
+/**
+ * Aropixel brand tokens, lifted from --aro-* custom properties shipped by
+ * AropixelAdminBundle so the marketing site stays visually consistent with
+ * the actual admin UI (see https://aropixel.github.io/admin-bundle/).
+ */
+:root {
+  --vp-font-family-base: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --aro-color-primary: #06bab4;
+  --aro-color-primary-hover: #05a29d;
+  --aro-color-cta: #ff6b5b;
+  --aro-color-cta-hover: #f0503f;
+  --aro-color-secondary: #2e4f5e;
+
+  --vp-c-brand-1: var(--aro-color-primary);
+  --vp-c-brand-2: var(--aro-color-primary-hover);
+  --vp-c-brand-3: var(--aro-color-primary);
+  --vp-c-brand-soft: rgba(6, 186, 180, 0.14);
+
+  --vp-button-brand-bg: var(--aro-color-primary);
+  --vp-button-brand-hover-bg: var(--aro-color-primary-hover);
+  --vp-button-brand-border: var(--aro-color-primary);
+
+  --vp-button-alt-bg: var(--aro-color-cta);
+  --vp-button-alt-hover-bg: var(--aro-color-cta-hover);
+  --vp-button-alt-text: #ffffff;
+  --vp-button-alt-border: var(--aro-color-cta);
+
+  --vp-c-text-1: #181c32;
+  --vp-c-text-2: #3f4254;
+}
+
+.dark {
+  --vp-c-brand-1: #4bd6d1;
+  --vp-c-brand-2: #06bab4;
+  --vp-c-brand-3: #4bd6d1;
+  --vp-c-brand-soft: rgba(6, 186, 180, 0.18);
+}
+
+/* Home hero gradient text, echoing the "one coral per screen" CTA rule */
+.VPHero .name.clip {
+  background: linear-gradient(120deg, var(--aro-color-primary) 30%, var(--aro-color-cta));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.VPButton.brand,
+.VPButton.alt {
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.VPFeature {
+  border-radius: 10px !important;
+}
+
+:root {
+  --vp-code-block-bg: #1e2a30;
+}
+
+.aro-section {
+  max-width: 848px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.aro-section h2 {
+  border-top: none;
+}
+
+.aro-shadow-img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(24, 28, 50, 0.14);
+  margin-top: 20px;
+}
