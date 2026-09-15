@@ -6,7 +6,7 @@ principale, pied de page…) en glisser-déposer, sans redéploiement.
 
 [GitHub — aropixel/menu-bundle](https://github.com/aropixel/menu-bundle)
 
-<img src="/gifs/menu.gif" alt="AropixelMenuBundle : réorganisation des liens de navigation en glisser-déposer" class="aro-shadow-img" />
+<img src="/screenshots/menu.png" alt="AropixelMenuBundle : réorganisation des liens de navigation en glisser-déposer" class="aro-shadow-img" />
 
 ## Fonctionnalités clés
 

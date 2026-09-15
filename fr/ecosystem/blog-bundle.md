@@ -6,7 +6,7 @@ essentielles.
 
 [GitHub — aropixel/blog-bundle](https://github.com/aropixel/blog-bundle)
 
-<img src="/gifs/blog.gif" alt="AropixelBlogBundle : édition d'un article avec champs SEO et planification" class="aro-shadow-img" />
+<img src="/screenshots/blog.png" alt="AropixelBlogBundle : édition d'un article avec champs SEO et planification" class="aro-shadow-img" />
 
 ## Ce qu'il fournit
 

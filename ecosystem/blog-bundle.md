@@ -5,7 +5,7 @@ posts and categories on your Symfony site with essential editorial features.
 
 [GitHub — aropixel/blog-bundle](https://github.com/aropixel/blog-bundle)
 
-<img src="/gifs/blog.gif" alt="AropixelBlogBundle: editing a blog post with SEO and scheduling fields" class="aro-shadow-img" />
+<img src="/screenshots/blog.png" alt="AropixelBlogBundle: editing a blog post with SEO and scheduling fields" class="aro-shadow-img" />
 
 ## What it provides
 

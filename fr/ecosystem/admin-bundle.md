@@ -6,7 +6,7 @@ devenir une boîte noire.
 
 [GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle)
 
-<img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle : une liste CRUD générée, avec tri, filtre et pagination" class="aro-shadow-img" />
+<img src="/screenshots/admin-crud.png" alt="AropixelAdminBundle : une liste CRUD générée, avec tri, filtre et pagination" class="aro-shadow-img" />
 
 ## Ce qui le différencie
 

@@ -6,7 +6,7 @@ code, and without becoming a black box.
 
 [GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle)
 
-<img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
+<img src="/screenshots/admin-crud.png" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
 
 ## Why it's different
 

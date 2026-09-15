@@ -5,7 +5,7 @@ build the website's menus (main navigation, footer…) with drag-and-drop, no re
 
 [GitHub — aropixel/menu-bundle](https://github.com/aropixel/menu-bundle)
 
-<img src="/gifs/menu.gif" alt="AropixelMenuBundle: reordering navigation links by drag-and-drop" class="aro-shadow-img" />
+<img src="/screenshots/menu.png" alt="AropixelMenuBundle: reordering navigation links by drag-and-drop" class="aro-shadow-img" />
 
 ## Key features
 

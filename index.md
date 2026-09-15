@@ -51,21 +51,21 @@ features:
 
 ## See it in action
 
-<div class="aro-gif-grid">
+<div class="aro-shot-grid">
   <figure>
-    <img src="/gifs/admin-crud.gif" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
+    <img src="/screenshots/admin-crud.png" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
     <figcaption>AdminBundle — a full CRUD, generated from your own FormType</figcaption>
   </figure>
   <figure>
-    <img src="/gifs/page-builder.gif" alt="AropixelPageBundle: dragging a block into place in the visual page builder" class="aro-shadow-img" />
+    <img src="/screenshots/page-builder.png" alt="AropixelPageBundle: dragging a block into place in the visual page builder" class="aro-shadow-img" />
     <figcaption>PageBundle — the visual, drag-and-drop page builder</figcaption>
   </figure>
   <figure>
-    <img src="/gifs/blog.gif" alt="AropixelBlogBundle: editing a blog post with SEO and scheduling fields" class="aro-shadow-img" />
+    <img src="/screenshots/blog.png" alt="AropixelBlogBundle: editing a blog post with SEO and scheduling fields" class="aro-shadow-img" />
     <figcaption>BlogBundle — posts, categories and scheduling</figcaption>
   </figure>
   <figure>
-    <img src="/gifs/menu.gif" alt="AropixelMenuBundle: reordering navigation links by drag-and-drop" class="aro-shadow-img" />
+    <img src="/screenshots/menu.png" alt="AropixelMenuBundle: reordering navigation links by drag-and-drop" class="aro-shadow-img" />
     <figcaption>MenuBundle — drag-and-drop navigation menus</figcaption>
   </figure>
 </div>

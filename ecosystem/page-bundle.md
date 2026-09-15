@@ -5,7 +5,7 @@
 
 [GitHub — aropixel/page-bundle](https://github.com/aropixel/page-bundle)
 
-<img src="/gifs/page-builder.gif" alt="AropixelPageBundle: dragging a block into place in the visual page builder" class="aro-shadow-img" />
+<img src="/screenshots/page-builder.png" alt="AropixelPageBundle: dragging a block into place in the visual page builder" class="aro-shadow-img" />
 
 ## Three page types, one bundle
 

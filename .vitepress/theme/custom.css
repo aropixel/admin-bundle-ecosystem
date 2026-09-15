@@ -82,7 +82,7 @@
   margin: 24px 0;
 }
 
-.aro-gif-grid .aro-shadow-img {
+.aro-shot-grid .aro-shadow-img {
   margin: 0;
 }
 
@@ -90,18 +90,18 @@
   max-width: 1180px;
 }
 
-.aro-gif-grid {
+.aro-shot-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
   margin-top: 24px;
 }
 
-.aro-gif-grid figure {
+.aro-shot-grid figure {
   margin: 0;
 }
 
-.aro-gif-grid figcaption {
+.aro-shot-grid figcaption {
   margin-top: 10px;
   font-size: 14px;
   color: var(--vp-c-text-2);
@@ -109,7 +109,7 @@
 }
 
 @media (max-width: 719px) {
-  .aro-gif-grid {
+  .aro-shot-grid {
     grid-template-columns: 1fr;
   }
 }
