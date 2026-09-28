@@ -1,80 +1,85 @@
 # Castor Starter 🦫
 
-A [Castor](https://github.com/jolicode/castor) task runner that automates two workflows for Aropixel
-Symfony projects — named, and modeled, after the [Castor](https://castor.jolicode.com/) tool it's built on.
+Un task runner [Castor](https://github.com/jolicode/castor) qui automatise deux workflows pour les
+projets Symfony d'Aropixel — nommé, et pensé, d'après l'outil [Castor](https://castor.jolicode.com/)
+sur lequel il repose.
 
 [GitHub — aropixel/castor-starter](https://github.com/aropixel/castor-starter)
 
-## Two workflows
+## Deux workflows
 
-1. **Scaffold a new Symfony admin project** — clones
-   [jolicode/docker-starter](https://github.com/jolicode/docker-starter), installs Symfony, and sets
-   up [aropixel/admin-bundle](/ecosystem/admin-bundle) with Docker infrastructure.
-2. **Bootstrap a contribution environment** for any Aropixel bundle — forks the repo on GitHub, clones
-   the fork, and creates a Symfony sandbox with the bundle installed as a path repository (symlink)
-   for live development.
+1. **Générer un nouveau projet admin Symfony** — clone
+   [jolicode/docker-starter](https://github.com/jolicode/docker-starter), installe Symfony, et met en
+   place [aropixel/admin-bundle](/ecosystem/admin-bundle) avec l'infrastructure Docker.
+2. **Amorcer un environnement de contribution** pour n'importe quel bundle Aropixel — fork le dépôt sur
+   GitHub, clone le fork, et crée un sandbox Symfony avec le bundle installé comme dépôt path
+   (symlink) pour du développement en direct.
 
-## Prerequisites
+## Prérequis
 
-- [Castor](https://github.com/jolicode/castor) installed globally
+- [Castor](https://github.com/jolicode/castor) installé globalement
 - Docker + Docker Compose
 - PHP + Composer
-- [GitHub CLI](https://cli.github.com/) (`gh`, authenticated) — required for `aropixel:contrib:*` tasks
+- [CLI GitHub](https://cli.github.com/) (`gh`, authentifiée) — requise pour les tâches
+  `aropixel:contrib:*`
 
-## Install
+## Installation
 
 ```bash
 git clone git@github.com:aropixel/castor-starter.git
 cd castor-starter
 composer install
 
-# make it available anywhere on your machine
+# le rendre disponible partout sur votre machine
 echo "alias castor-starter='\"$(pwd)/vendor/bin/castor\" --castor-file=\"$(pwd)/castor.php\"'" >> ~/.$(basename $SHELL)rc
 source ~/.$(basename $SHELL)rc
 ```
 
-## Scaffold a new admin project
+## Générer un nouveau projet admin
 
 ```bash
-castor-starter aropixel:new:admin <project-name> [--with-page] [--with-blog] [--with-menu] [--all]
+castor-starter aropixel:new:admin <nom-du-projet> [--with-page] [--with-blog] [--with-menu] [--all]
 ```
 
-Includes:
+Inclus :
 
-- Ready-to-use administration via `aropixel/admin-bundle`, with a default administrator account
-- Optimized Docker infrastructure (PHP 8.2+, Nginx, MySQL, Varnish, Mailpit, phpMyAdmin) based on
+- Une administration prête à l'emploi via `aropixel/admin-bundle`, avec un compte administrateur par
+  défaut
+- Une infrastructure Docker optimisée (PHP 8.2+, Nginx, MySQL, Varnish, Mailpit, phpMyAdmin) basée sur
   `jolicode/docker-starter`
-- Clever Cloud deployment config (Varnish, post-build scripts)
-- Image management via `LiipImagineBundle`, Doctrine extensions via `StofDoctrineExtensionsBundle`
-- Security and routing pre-configured with a randomized admin slug
-- Claude Code skills for AI-assisted development, copied into `.claude/skills/`
+- La config de déploiement Clever Cloud (Varnish, scripts post-build)
+- La gestion d'images via `LiipImagineBundle`, les extensions Doctrine via
+  `StofDoctrineExtensionsBundle`
+- Sécurité et routing préconfigurés avec un slug d'admin randomisé
+- Des skills Claude Code pour le développement assisté par IA, copiées dans `.claude/skills/`
 
-## Bootstrap a contribution environment
+## Amorcer un environnement de contribution
 
-Sets up a local environment for contributing to an Aropixel bundle. The fork is installed as a path
-repository (symlink), so changes are visible immediately — no `composer update` needed.
+Met en place un environnement local pour contribuer à un bundle Aropixel. Le fork est installé comme
+dépôt path (symlink), donc les changements sont visibles immédiatement — pas de `composer update`
+nécessaire.
 
 ```bash
-# Base environment — always required first
+# Environnement de base — toujours requis en premier
 castor-starter aropixel:contrib:admin <dir>
 
-# Add a bundle to an existing contrib environment
+# Ajouter un bundle à un environnement de contribution existant
 castor-starter aropixel:contrib:blog <dir>
 castor-starter aropixel:contrib:page <dir>
 castor-starter aropixel:contrib:menu <dir>
 
-# Or bring in every bundle at once
+# Ou tout installer d'un coup
 castor-starter aropixel:contrib:all <dir>
 ```
 
 ```
 <dir>/
-  admin-bundle/     ← fork clone (symlinked via Composer path repository)
-  application/      ← Symfony app
+  admin-bundle/     ← clone du fork (symlink via dépôt path Composer)
+  application/      ← application Symfony
   infrastructure/
 ```
 
-## List all available tasks
+## Lister toutes les tâches disponibles
 
 ```bash
 castor-starter

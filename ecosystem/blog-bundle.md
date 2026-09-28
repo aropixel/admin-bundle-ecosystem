@@ -1,33 +1,34 @@
 # AropixelBlogBundle
 
-**A blog management module** complementary to [AropixelAdminBundle](/ecosystem/admin-bundle) — manage
-posts and categories on your Symfony site with essential editorial features.
+**Un module de gestion de blog**, complémentaire à [AropixelAdminBundle](/ecosystem/admin-bundle)
+— gérez articles et catégories sur votre site Symfony avec les fonctionnalités éditoriales
+essentielles.
 
 [GitHub — aropixel/blog-bundle](https://github.com/aropixel/blog-bundle)
 
-<img src="/screenshots/blog.png" alt="AropixelBlogBundle: editing a blog post with SEO and scheduling fields" class="aro-shadow-img" />
+<img src="/screenshots/blog-demo.gif" alt="AropixelBlogBundle : édition d'un article" class="aro-shadow-img" />
 
-## What it provides
+## Ce qu'il fournit
 
-- **Posts** — content management, publication dates, SEO fields, and images
-- **Categories** — organize posts by topic
-- **Multilingual** — native support for translated titles, descriptions and slugs
+- **Articles** — gestion de contenu, dates de publication, champs SEO, images
+- **Catégories** — organisation des articles par thématique
+- **Multilingue** — support natif de la traduction des titres, descriptions et slugs
 
-## Key features
+## Fonctionnalités clés
 
-- **Seamless integration** — designed to work natively with AdminBundle
-- **Rich content fields** — excerpt and description, plus SEO (meta title, description, keywords)
-- **Scheduled publication** — publication start and end dates
-- **Images & crops** — featured images with crop-format management
-- **Extensibility** — override entities and forms freely
+- **Intégration native** — pensé pour fonctionner nativement avec AdminBundle
+- **Champs de contenu riches** — extrait et description, plus SEO (meta title, description, mots-clés)
+- **Publication planifiée** — dates de début et de fin de publication
+- **Images & recadrage** — images à la une avec gestion des formats de recadrage
+- **Extensibilité** — surcharge libre des entités et des formulaires
 
-## Requirements
+## Prérequis
 
 - PHP 8.2+
-- Symfony 6.4 or 7.x
-- `aropixel/admin-bundle` installed and configured
+- Symfony 6.4 ou 7.x
+- `aropixel/admin-bundle` installé et configuré
 
-## Install
+## Installation
 
 ```bash
 composer require aropixel/blog-bundle
@@ -36,5 +37,5 @@ composer require aropixel/blog-bundle
 ## Documentation
 
 - [Installation](https://github.com/aropixel/blog-bundle/blob/main/doc/installation.md)
-- [Entity Customization](https://github.com/aropixel/blog-bundle/blob/main/doc/entities.md)
-- [Internationalization](https://github.com/aropixel/blog-bundle/blob/main/doc/i18n.md)
+- [Personnalisation des entités](https://github.com/aropixel/blog-bundle/blob/main/doc/entities.md)
+- [Internationalisation](https://github.com/aropixel/blog-bundle/blob/main/doc/i18n.md)

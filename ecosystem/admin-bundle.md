@@ -1,44 +1,47 @@
 # AropixelAdminBundle
 
-**A developer-friendly, streamlined administration framework for Symfony.** It gives you the tools
-and a solid foundation to build an admin interface quickly — without getting in the way of your own
-code, and without becoming a black box.
+**Un framework d'administration Symfony pensé pour les développeurs.** Il fournit les outils et une
+base solide pour construire une interface d'admin rapidement — sans gêner votre propre code, et sans
+devenir une boîte noire.
 
 [GitHub — aropixel/admin-bundle](https://github.com/aropixel/admin-bundle)
 
-<img src="/screenshots/admin-crud.png" alt="AropixelAdminBundle: a generated CRUD list with sorting, filtering and pagination" class="aro-shadow-img" />
+<img src="/screenshots/admin-crud-demo.gif" alt="AropixelAdminBundle : parcours d'un CRUD généré" class="aro-shadow-img" />
 
-## Why it's different
+## Ce qui le différencie
 
-Most admin generators hide your entities behind a configuration DSL. AropixelAdminBundle starts from
-**your own `FormType`** — the `make:crud` generator reads it and builds a full CRUD around it, so you
-keep full control over validation, data transformers and business logic.
+La plupart des générateurs d'admin cachent vos entités derrière un DSL de configuration.
+AropixelAdminBundle part de **votre propre `FormType`** — le générateur `make:crud` le lit et
+construit un CRUD complet autour, vous gardez donc le contrôle total sur la validation, les
+transformers et la logique métier.
 
-## Key features
+## Fonctionnalités clés
 
-- **`make:crud` generator** — full create/read/update/delete scaffolding from an existing `FormType`
-- **DataTable component** — sortable, filterable, paginated listings out of the box
-- **Select2 integration** — searchable, ajax-ready select widgets
-- **Image & gallery widgets** — uploads, crops and galleries wired into the admin forms
-- **User & role management** — admin user CRUD with role-based access control
-- **Token-based design system** — every colour, spacing and radius is an `--aro-*` CSS custom
-  property on top of Bootstrap 5, so re-theming is a handful of variables, not a CSS override war
-- **Multilingual interface** — French, English, German, Spanish, Italian, Czech
+- **Générateur `make:crud`** — scaffolding complet create/read/update/delete à partir d'un `FormType`
+  existant
+- **Composant DataTable** — listes triables, filtrables et paginées, prêtes à l'emploi
+- **Intégration Select2** — widgets de sélection avec recherche, compatibles ajax
+- **Widgets image & galerie** — uploads, recadrage et galeries branchés dans les formulaires d'admin
+- **Gestion des utilisateurs & rôles** — CRUD utilisateurs admin avec contrôle d'accès par rôle
+- **Design system à base de tokens** — chaque couleur, espacement et rayon est une custom property CSS
+  `--aro-*` au-dessus de Bootstrap 5, donc re-thémer se résume à une poignée de variables, pas une
+  guerre de surcharges CSS
+- **Interface multilingue** — français, anglais, allemand, espagnol, italien, tchèque
 
-## Companion bundles
+## Bundles complémentaires
 
-AropixelAdminBundle is the foundation the rest of the ecosystem builds on:
+AropixelAdminBundle est le socle sur lequel repose le reste de l'écosystème :
 
-- [PageBundle](/ecosystem/page-bundle) — pages & visual page builder
-- [BlogBundle](/ecosystem/blog-bundle) — posts & categories
-- [MenuBundle](/ecosystem/menu-bundle) — navigation menus
+- [PageBundle](/ecosystem/page-bundle) — pages & page builder visuel
+- [BlogBundle](/ecosystem/blog-bundle) — articles & catégories
+- [MenuBundle](/ecosystem/menu-bundle) — menus de navigation
 
-## Requirements
+## Prérequis
 
 - PHP 8.2+
-- Symfony 6.4 or 7.x
+- Symfony 6.4 ou 7.x
 
-## Install
+## Installation
 
 ```bash
 composer require aropixel/admin-bundle
@@ -48,12 +51,12 @@ php bin/console aropixel:admin:create-user
 ## Documentation
 
 - [Installation](https://github.com/aropixel/admin-bundle/blob/main/doc/installation.md)
-- [Create Admin User](https://github.com/aropixel/admin-bundle/blob/main/doc/create_user.md)
+- [Créer un utilisateur admin](https://github.com/aropixel/admin-bundle/blob/main/doc/create_user.md)
 - [Internationalisation](https://github.com/aropixel/admin-bundle/blob/main/doc/i18n.md)
-- [CRUD Generator (`make:crud`)](https://github.com/aropixel/admin-bundle/blob/main/doc/make_crud.md)
-- [DataTable Component](https://github.com/aropixel/admin-bundle/blob/main/doc/datatable.md)
-- [Select2 Component](https://github.com/aropixel/admin-bundle/blob/main/doc/select2.md)
-- [Custom Form Types](https://github.com/aropixel/admin-bundle/blob/main/doc/forms.md)
-- [CSS Customization](https://github.com/aropixel/admin-bundle/blob/main/doc/css_customization.md)
-- [Entity Customization](https://github.com/aropixel/admin-bundle/blob/main/doc/entities.md)
-- [Admin Menu Customization](https://github.com/aropixel/admin-bundle/blob/main/doc/admin_menu.md)
+- [Générateur CRUD (`make:crud`)](https://github.com/aropixel/admin-bundle/blob/main/doc/make_crud.md)
+- [Composant DataTable](https://github.com/aropixel/admin-bundle/blob/main/doc/datatable.md)
+- [Composant Select2](https://github.com/aropixel/admin-bundle/blob/main/doc/select2.md)
+- [FormTypes personnalisés](https://github.com/aropixel/admin-bundle/blob/main/doc/forms.md)
+- [Personnalisation CSS](https://github.com/aropixel/admin-bundle/blob/main/doc/css_customization.md)
+- [Personnalisation des entités](https://github.com/aropixel/admin-bundle/blob/main/doc/entities.md)
+- [Personnalisation du menu admin](https://github.com/aropixel/admin-bundle/blob/main/doc/admin_menu.md)

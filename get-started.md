@@ -1,70 +1,72 @@
-# Get Started
+# Démarrer
 
-There are two ways to get going: scaffold a brand-new project with **Castor Starter**, or add a
-single bundle to an existing Symfony application. Both take a few minutes.
+Deux façons de démarrer : générer un nouveau projet avec **Castor Starter**, ou ajouter un bundle à
+une application Symfony existante. Les deux prennent quelques minutes.
 
-## Option A — Scaffold a new project
+## Option A — Générer un nouveau projet
 
-[Castor Starter](/ecosystem/castor-starter) is a [Castor](https://github.com/jolicode/castor) task
-runner that automates the whole setup: Symfony, Docker infrastructure, `aropixel/admin-bundle`, and
-any companion bundle you need.
+[Castor Starter](/ecosystem/castor-starter) est un task runner
+[Castor](https://github.com/jolicode/castor) qui automatise toute la mise en place : Symfony,
+infrastructure Docker, `aropixel/admin-bundle`, et tout bundle complémentaire dont vous avez besoin.
 
-**Prerequisites:** [Castor](https://github.com/jolicode/castor), Docker + Docker Compose, PHP + Composer,
-and the [GitHub CLI](https://cli.github.com/) (`gh`) if you plan to contribute back to a bundle.
+**Prérequis :** [Castor](https://github.com/jolicode/castor), Docker + Docker Compose, PHP + Composer,
+et la [CLI GitHub](https://cli.github.com/) (`gh`) si vous comptez contribuer à un bundle.
 
 ```bash
-# 1. Clone the project
+# 1. Cloner le projet
 git clone git@github.com:aropixel/castor-starter.git
 cd castor-starter
 
-# 2. Install dependencies
+# 2. Installer les dépendances
 composer install
 
-# 3. Make it available anywhere on your machine
+# 3. Le rendre disponible partout sur votre machine
 echo "alias castor-starter='\"$(pwd)/vendor/bin/castor\" --castor-file=\"$(pwd)/castor.php\"'" >> ~/.$(basename $SHELL)rc
 source ~/.$(basename $SHELL)rc
 ```
 
-Scaffold a complete admin project, with every companion bundle:
+Générez un projet admin complet, avec tous les bundles complémentaires :
 
 ```bash
-castor-starter aropixel:new:admin my-project --all
+castor-starter aropixel:new:admin mon-projet --all
 ```
 
-That single command gives you a ready-to-use administration with a default admin account, a Docker
-stack (PHP 8.2+, Nginx, MySQL, Varnish, Mailpit, phpMyAdmin) based on
-[`jolicode/docker-starter`](https://github.com/jolicode/docker-starter), Clever Cloud deployment
-config, image management via `LiipImagineBundle`, and a randomized admin route slug for security.
+Cette seule commande vous donne une administration prête à l'emploi avec un compte admin par défaut,
+une stack Docker (PHP 8.2+, Nginx, MySQL, Varnish, Mailpit, phpMyAdmin) basée sur
+[`jolicode/docker-starter`](https://github.com/jolicode/docker-starter), la config de déploiement
+Clever Cloud, la gestion d'images via `LiipImagineBundle`, et un slug d'admin randomisé pour la
+sécurité.
 
-→ Full details on the [Castor Starter](/ecosystem/castor-starter) page.
+→ Tous les détails sur la page [Castor Starter](/ecosystem/castor-starter).
 
-## Option B — Add a bundle to an existing project
+## Option B — Ajouter un bundle à un projet existant
 
-Require the core bundle, create your first admin user, and you're in:
+Installez le bundle principal, créez votre premier utilisateur admin, et c'est parti :
 
 ```bash
 composer require aropixel/admin-bundle
 php bin/console aropixel:admin:create-user
 ```
 
-Then layer in whichever companion bundle your project needs:
+Puis ajoutez le ou les bundles complémentaires dont votre projet a besoin :
 
 ```bash
-composer require aropixel/page-bundle   # visual page builder
-composer require aropixel/blog-bundle   # posts & categories
-composer require aropixel/menu-bundle   # navigation menus
+composer require aropixel/page-bundle   # page builder visuel
+composer require aropixel/blog-bundle   # articles & catégories
+composer require aropixel/menu-bundle   # menus de navigation
 ```
 
-Each bundle ships its own installation guide with entity extension, Doctrine mapping, and routing —
-see the [ecosystem overview](/ecosystem/admin-bundle) for links.
+Chaque bundle a son propre guide d'installation, avec extension d'entités, mapping Doctrine et
+routing — voir l'[aperçu de l'écosystème](/ecosystem/admin-bundle) pour les liens.
 
-## Requirements
+## Prérequis
 
 | | |
 |---|---|
-| PHP | 8.2 or above |
-| Symfony | 6.4 or 7.x |
-| License | MIT, on every repository |
-| Languages | French, English, German, Spanish, Italian, Czech |
+| PHP | 8.2 ou supérieur |
+| Symfony | 6.4 ou 7.x |
+| Licence | MIT, sur chaque dépôt |
+| Langues | Français, anglais, allemand, espagnol, italien, tchèque |
 
-→ Curious what it looks like before you install anything? See it [in action on the homepage](/#see-it-in-action).
+→ Envie de voir à quoi ça ressemble avant d'installer quoi que ce soit ? Direction la
+[page d'accueil](/#a-voir-en-action).

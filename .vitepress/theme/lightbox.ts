@@ -24,7 +24,13 @@ export function setupLightbox() {
     if (!thumb) return
 
     const { overlay, img } = getOverlay()
-    img.src = thumb.src
+    // A thumbnail can point the lightbox at a different (usually static)
+    // image via data-full — e.g. an animated GIF thumbnail that should
+    // open on the still screenshot instead of the moving version. Unlike
+    // src, this custom attribute isn't base-rewritten by VitePress at
+    // build time, so the site base has to be prepended by hand here.
+    const full = thumb.dataset.full
+    img.src = full ? import.meta.env.BASE_URL + full.replace(/^\//, '') : thumb.src
     img.alt = thumb.alt
     overlay.classList.add('is-open')
   })

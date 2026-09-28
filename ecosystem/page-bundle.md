@@ -1,44 +1,45 @@
 # AropixelPageBundle
 
-**A page management module for Symfony**, built as a companion to
-[AropixelAdminBundle](/ecosystem/admin-bundle) — a lightweight alternative to a traditional CMS.
+**Un module de gestion de pages pour Symfony**, construit comme compagnon d'
+[AropixelAdminBundle](/ecosystem/admin-bundle) — une alternative légère à un CMS traditionnel.
 
 [GitHub — aropixel/page-bundle](https://github.com/aropixel/page-bundle)
 
-<img src="/screenshots/page-builder.png" alt="AropixelPageBundle: dragging a block into place in the visual page builder" class="aro-shadow-img" />
+<img src="/screenshots/page-builder-demo.gif" alt="AropixelPageBundle : édition d'une page dans le page builder visuel" class="aro-shadow-img" />
 
-## Three page types, one bundle
+## Trois types de pages, un seul bundle
 
-| Type | Storage | Use case |
+| Type | Stockage | Cas d'usage |
 |---|---|---|
-| `TYPE_DEFAULT` | `htmlContent` | Simple pages edited via CKEditor |
-| `TYPE_CUSTOM` | `jsonContent` + pre-rendered `htmlContent` | Visual page builder |
-| Custom JSON | `jsonContent` | Structured forms with named fields (e.g. a contact page with phone/address) |
+| `TYPE_DEFAULT` | `htmlContent` | Pages simples éditées via CKEditor |
+| `TYPE_CUSTOM` | `jsonContent` + `htmlContent` pré-rendu | Page builder visuel |
+| JSON personnalisé | `jsonContent` | Formulaires structurés à champs nommés (ex. une page contact avec téléphone/adresse) |
 
-For the visual builder, the page builder JSON payload is rendered to HTML **at save time** — so
-front-end display is a plain <code v-pre>{{ page.htmlContent|raw }}</code>, with zero rendering overhead per request.
+Pour le page builder visuel, le JSON est rendu en HTML **au moment de l'enregistrement** — l'affichage
+front est donc un simple <code v-pre>{{ page.htmlContent|raw }}</code>, sans coût de rendu par requête.
 
-## Key features
+## Fonctionnalités clés
 
-- **Visual page builder** — block-based drag-and-drop editor: sections, rows, columns, text, images,
-  buttons, titles and more
-- **Custom block types** — extend the builder with your own blocks via a simple JS + YAML registration
-- **Fixed / protected pages** — declare non-deletable system pages (homepage, contact…) with a static
-  code for reliable lookups
-- **Multilingual** — full i18n via Gedmo Translatable, with per-locale slugs, content and pre-rendered
-  HTML
-- **SEO fields** — meta title, meta description and slug, per locale
-- **Publication scheduling** — online/offline status with an optional date range
-- **`PageSavedEvent`** — dispatched after every save, to invalidate Varnish, a CDN, Redis, or any cache
-  layer
+- **Page builder visuel** — éditeur par blocs en glisser-déposer : sections, lignes, colonnes, texte,
+  images, boutons, titres, et plus
+- **Types de blocs personnalisés** — étendez le builder avec vos propres blocs via un simple
+  enregistrement JS + YAML
+- **Pages fixes / protégées** — déclarez des pages système non supprimables (accueil, contact…) avec
+  un code statique pour des recherches fiables
+- **Multilingue** — i18n complet via Gedmo Translatable, avec slugs, contenu et HTML pré-rendu par
+  locale
+- **Champs SEO** — meta title, meta description et slug, par locale
+- **Planification de publication** — statut en ligne/hors ligne avec plage de dates optionnelle
+- **Événement `PageSavedEvent`** — déclenché après chaque enregistrement, pour invalider Varnish, un
+  CDN, Redis, ou toute couche de cache
 
-## Requirements
+## Prérequis
 
 - PHP 8.2+
-- Symfony 6.4 or 7.x
-- `aropixel/admin-bundle` installed and configured
+- Symfony 6.4 ou 7.x
+- `aropixel/admin-bundle` installé et configuré
 
-## Install
+## Installation
 
 ```bash
 composer require aropixel/page-bundle
@@ -58,9 +59,9 @@ php bin/console doctrine:migrations:migrate
 
 ## Documentation
 
-- [Installation](https://github.com/aropixel/page-bundle/blob/main/doc/installation.md) — entity
-  extension, Doctrine mapping, bundle configuration
-- [Usage and page types](https://github.com/aropixel/page-bundle/blob/main/doc/usage.md) — page
-  builder config, fixed pages, front-end rendering, events
-- [Custom block types](https://github.com/aropixel/page-bundle/blob/main/doc/custom-blocks.md)
-- [Entity customization](https://github.com/aropixel/page-bundle/blob/main/doc/entities.md)
+- [Installation](https://github.com/aropixel/page-bundle/blob/main/doc/installation.md) — extension
+  d'entités, mapping Doctrine, configuration du bundle
+- [Usage et types de pages](https://github.com/aropixel/page-bundle/blob/main/doc/usage.md) — config
+  du page builder, pages fixes, rendu front, événements
+- [Types de blocs personnalisés](https://github.com/aropixel/page-bundle/blob/main/doc/custom-blocks.md)
+- [Personnalisation des entités](https://github.com/aropixel/page-bundle/blob/main/doc/entities.md)

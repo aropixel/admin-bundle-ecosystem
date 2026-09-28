@@ -1,24 +1,26 @@
 # AropixelMenuBundle
 
-**A navigation management system** complementary to [AropixelAdminBundle](/ecosystem/admin-bundle) —
-build the website's menus (main navigation, footer…) with drag-and-drop, no redeploy required.
+**Un système de gestion de navigation**, complémentaire à
+[AropixelAdminBundle](/ecosystem/admin-bundle) — construisez les menus du site (navigation
+principale, pied de page…) en glisser-déposer, sans redéploiement.
 
 [GitHub — aropixel/menu-bundle](https://github.com/aropixel/menu-bundle)
 
-<img src="/screenshots/menu.png" alt="AropixelMenuBundle: reordering navigation links by drag-and-drop" class="aro-shadow-img" />
+<img src="/screenshots/menu.png" alt="AropixelMenuBundle : réorganisation des liens de navigation en glisser-déposer" class="aro-shadow-img" />
 
-## Key features
+## Fonctionnalités clés
 
-- **Multi-level navigation** — nested menu structures for headers, footers and other locations
-- **Drag-and-drop editing** — reorder links visually, from the admin
-- **Centralized management** — every menu location edited from one place
-- **Multilingual** — French, English, German, Spanish, Italian, Czech
+- **Navigation multi-niveaux** — structures de menu imbriquées, pour l'en-tête, le pied de page et
+  d'autres emplacements
+- **Édition en glisser-déposer** — réordonnez les liens visuellement, depuis l'admin
+- **Gestion centralisée** — tous les emplacements de menu édités au même endroit
+- **Multilingue** — français, anglais, allemand, espagnol, italien, tchèque
 
-## Requirements
+## Prérequis
 
-- A Symfony project with `aropixel/admin-bundle` installed
+- Un projet Symfony avec `aropixel/admin-bundle` installé
 
-## Install
+## Installation
 
 ```bash
 composer require aropixel/menu-bundle
@@ -30,8 +32,8 @@ aropixel_menu:
     resource: '@AropixelMenuBundle/Resources/config/routing.xml'
 ```
 
-Then apply the migrations for the bundle's entities.
+Puis appliquez les migrations pour les entités du bundle.
 
-## License
+## Licence
 
-MIT, like every repository in the ecosystem.
+MIT, comme tous les dépôts de l'écosystème.
