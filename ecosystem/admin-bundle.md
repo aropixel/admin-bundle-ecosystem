@@ -15,6 +15,64 @@ AropixelAdminBundle part de **votre propre `FormType`** — le générateur `mak
 construit un CRUD complet autour, vous gardez donc le contrôle total sur la validation, les
 transformers et la logique métier.
 
+## En pratique : plusieurs widgets en quelques lignes
+
+Un exemple concret plutôt qu'une liste de features : un champ relation (catégorie), un booléen
+(toggle) et une image avec upload, bibliothèque de médias partagée et recadrage — dans un seul
+`FormType`.
+
+Le FormType :
+
+```php
+use Aropixel\AdminBundle\Form\Type\Image\Single\ImageType;
+use Aropixel\AdminBundle\Form\Type\ToggleSwitchType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+
+$builder
+    ->add('title', TextType::class, [
+        'label' => 'Titre',
+    ])
+    ->add('category', EntityType::class, [
+        'label' => 'Catégorie',
+        'class' => Category::class,
+        'choice_label' => 'name',
+        'required' => false,
+    ])
+    ->add('published', ToggleSwitchType::class, [
+        'label' => 'Publié',
+        'required' => false,
+    ])
+    ->add('cover', ImageType::class, [
+        'label' => 'Image de couverture',
+        'property_path' => 'coverFilename',
+        'data_value' => 'coverFilename',
+        'crops_value' => 'coverCrops',
+        'crops' => [
+            'article_cover' => 'Cover (16/9)',
+        ],
+        'required' => false,
+    ])
+;
+```
+
+Le template :
+
+```twig
+{{ form_row(form.title) }}
+{{ form_row(form.category) }}
+{{ form_row(form.published) }}
+{{ form_row(form.cover) }}
+```
+
+Le rendu dans l'admin :
+
+<img src="/screenshots/form-image-widget.png" alt="Le formulaire rendu : Titre, Catégorie (select), Publié (toggle) et Image de couverture" class="aro-shadow-img" />
+
+C'est tout — pas de configuration supplémentaire, pas de JavaScript à écrire. Le même principe
+s'applique aux galeries d'images, aux fichiers et aux collections.
+
+[Voir tous les widgets disponibles →](https://github.com/aropixel/admin-bundle/blob/main/doc/forms.md)
+
 ## Fonctionnalités clés
 
 - **Générateur `make:crud`** — scaffolding complet create/read/update/delete à partir d'un `FormType`

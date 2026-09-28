@@ -84,9 +84,9 @@
 
 .aro-shot-grid .aro-shadow-img {
   margin: 0;
-  height: 230px;
-  object-fit: cover;
-  object-position: top;
+  /* No fixed height/crop here — the 4 source screenshots are already
+     uniform (1707x820), so natural width-scaled height lines them up
+     exactly like the full-size captures on the bundle pages. */
   cursor: zoom-in;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }

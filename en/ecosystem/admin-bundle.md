@@ -14,6 +14,63 @@ Most admin generators hide your entities behind a configuration DSL. AropixelAdm
 **your own `FormType`** — the `make:crud` generator reads it and builds a full CRUD around it, so you
 keep full control over validation, data transformers and business logic.
 
+## In practice: several widgets in a few lines
+
+A concrete example rather than a feature list: a relation field (category), a boolean (toggle)
+and an image with upload, a shared media library and cropping — all in a single `FormType`.
+
+The FormType:
+
+```php
+use Aropixel\AdminBundle\Form\Type\Image\Single\ImageType;
+use Aropixel\AdminBundle\Form\Type\ToggleSwitchType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+
+$builder
+    ->add('title', TextType::class, [
+        'label' => 'Title',
+    ])
+    ->add('category', EntityType::class, [
+        'label' => 'Category',
+        'class' => Category::class,
+        'choice_label' => 'name',
+        'required' => false,
+    ])
+    ->add('published', ToggleSwitchType::class, [
+        'label' => 'Published',
+        'required' => false,
+    ])
+    ->add('cover', ImageType::class, [
+        'label' => 'Cover image',
+        'property_path' => 'coverFilename',
+        'data_value' => 'coverFilename',
+        'crops_value' => 'coverCrops',
+        'crops' => [
+            'article_cover' => 'Cover (16/9)',
+        ],
+        'required' => false,
+    ])
+;
+```
+
+The template:
+
+```twig
+{{ form_row(form.title) }}
+{{ form_row(form.category) }}
+{{ form_row(form.published) }}
+{{ form_row(form.cover) }}
+```
+
+The result in the admin:
+
+<img src="/screenshots/form-image-widget.png" alt="The rendered form: Title, Category (select), Published (toggle) and Cover image" class="aro-shadow-img" />
+
+That's it — no extra configuration, no JavaScript to write. The same principle applies to image
+galleries, files and collections.
+
+[See all available widgets →](https://github.com/aropixel/admin-bundle/blob/main/doc/forms.md)
+
 ## Key features
 
 - **`make:crud` generator** — full create/read/update/delete scaffolding from an existing `FormType`

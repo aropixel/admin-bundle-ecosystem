@@ -53,7 +53,7 @@ features:
 
 <div class="aro-shot-grid">
   <figure>
-    <img src="/screenshots/admin-crud-demo.gif" data-full="/screenshots/admin-crud.png" alt="AropixelAdminBundle : une liste CRUD générée, avec tri, filtre et pagination" class="aro-shadow-img" />
+    <img src="/screenshots/admin-crud-demo-home.gif" data-full="/screenshots/admin-crud.png" alt="AropixelAdminBundle : une liste CRUD générée, avec tri, filtre et pagination" class="aro-shadow-img" />
     <figcaption>AdminBundle — un CRUD complet, généré à partir de votre FormType</figcaption>
   </figure>
   <figure>
